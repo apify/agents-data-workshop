@@ -46,7 +46,9 @@ Your agent (guided by the Actor Development skill) will:
 - Create Actor metadata
 - Test the Actor locally
 
-If the agent hits an issue, it'll iterate until it's fixed. Let it work — this is the Agent Development skill doing its job.
+If the agent hits an issue, it'll iterate until it's fixed. Let it work — this is the Actor Development skill doing its job.
+
+> **Running short on time?** Skip to step 3 and push the project as-is — you can always re-run and fix it from the Apify Console later. The important thing is getting a deployment up.
 
 ## 3. Deploy to Apify
 
@@ -57,6 +59,8 @@ apify push
 ```
 
 Your Actor is now live on the Apify platform.
+
+> **If `apify push` fails:** Make sure you ran `apify login` in Lesson 3 and that you're inside the project directory the agent created.
 
 ## 4. See your results
 
@@ -90,5 +94,3 @@ The Actor Development skill also generated a Store-ready README and metadata. If
 - [ ] `apify push` deployed successfully
 - [ ] Actor ran and returned filtered HN hiring posts
 - [ ] Data exported as JSON or CSV
-
-When ready, open [lesson-6-more-use-cases.md](./lesson-6-more-use-cases.md).

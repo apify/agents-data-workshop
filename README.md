@@ -14,14 +14,14 @@ A 90-minute hands-on workshop. Connect your AI coding agent to live web data usi
 **Bring your laptop with:**
 
 - An AI coding tool installed: Claude Code, Cursor, Codex, or similar
-- Node.js (v18+)
+- Node.js (v18+) — download at [nodejs.org](https://nodejs.org)
 
 No prior experience with MCP or Apify needed.
 
 ## Session structure
 
 1. **Opening talk** (~15 min) — the instructor introduces Apify, MCP, and Agent Skills
-2. **Self-paced lessons** (~70 min) — work through six lesson files at your own speed; raise your hand or flag down the instructor when you get stuck
+2. **Self-paced lessons** (~70 min) — work through the lesson files at your own speed; raise your hand or flag down the instructor when you get stuck
 3. **Wrap-up** (~5 min) — what you now have and where to go next
 
 ## Lessons
@@ -33,7 +33,6 @@ No prior experience with MCP or Apify needed.
 | 3   | [Install and Use the Apify CLI](./lesson-3-apify-cli.md)         | 10 min       |
 | 4   | [Install Agent Skills](./lesson-4-agent-skills.md)               | 10 min       |
 | 5   | [Build and Publish Your Own Actor](./lesson-5-build-your-own.md) | 20 min       |
-| 6   | [More Use Cases & Next Steps](./lesson-6-more-use-cases.md)      | 10 min       |
 
 ## Stuck?
 
@@ -42,3 +41,13 @@ Raise your hand or flag down an instructor. We'll get you unstuck.
 ## After the workshop
 
 Come find us at the **Apify booth** — we'll help you extend your Actor, answer questions, and show you what else you can build.
+
+The [Apify Store](https://apify.com/store) has thousands ready-made Actors you can call through MCP or the CLI. A few highlights:
+
+| Platform    | What you can get                         |
+| ----------- | ---------------------------------------- |
+| Google Maps | Business listings, reviews, contact info |
+| Booking.com | Hotel prices, availability, ratings      |
+| YouTube     | Video metadata, comments, channel info   |
+| LinkedIn    | Company and job data                     |
+| Amazon      | Product details, reviews, prices         |

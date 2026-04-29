@@ -10,7 +10,7 @@
 
 The Model Context Protocol (MCP) is a standard that lets AI agents discover and use external tools. Think of it like function calling, but standardized — any MCP-compatible client can connect to any MCP server.
 
-Apify runs an MCP server that exposes scraping Actors as tools your agent can call. Your agent can search Google, scrape Instagram, pull Hacker News data, and more — all by calling tools through MCP.
+Apify runs an MCP server that exposes scraping Actors as tools your agent can call. Your agent can search Google, scrape Hacker News, pull Google Maps data, and more — all by calling tools through MCP.
 
 ## 2. Configure your MCP client
 
@@ -31,17 +31,17 @@ On the [mcp.apify.com](https://mcp.apify.com) page, make sure the following are 
 
 ## 3. Verify the connection
 
-Restart your coding tool after configuring MCP, then ask your agent:
+After restarting, ask your agent:
 
 > What Apify tools are available to me?
 
-It should list multiple scraping tools. If it doesn't, double-check the configuration from [mcp.apify.com](https://mcp.apify.com) and confirm your API token is correct.
+It should list multiple scraping tools. If it doesn't, double-check that your API token is correct and that the config block is valid JSON (no trailing commas).
 
 ## 4. Run your first MCP query
 
 Ask your agent:
 
-> Search Google for "best developer conferences netherlands 2026" and show me the top 5 results
+> Search Google for "best e-bike 2026" and show me the top 5 results
 
 Your agent should call the Apify Google Search tool through MCP and return live results.
 
@@ -57,24 +57,12 @@ Try asking your agent to use the preloaded Google Maps tool:
 
 Because you added **Google Maps Scraper** as a preloaded Actor, the agent sees it as a direct tool. If you _hadn't_ preloaded it (but had **Actor discovery** enabled), the agent would take these extra steps:
 
-1. **Search:** Call `apify.store.search` to find a matching Actor in the Apify Store.
-2. **Select:** Inspect the Actor details and select the best one.
-3. **Run:** Call `apify.actor.run` to execute that Actor on the platform.
-4. **Deliver:** Return the structured data to you.
+1. **Search:** Call `apify.store.search` to find a matching Actor in the Apify Store
+2. **Select:** Inspect the Actor details and select the best one
+3. **Run:** Call `apify.actor.run` to execute that Actor on the platform
+4. **Deliver:** Return the structured data to you
 
-## 6. Experimental: On-the-fly Tool Creation
-
-Some modern MCP clients support **dynamic tool discovery**. This means the agent can find a tool it doesn't have yet, "install" it, and use it immediately without you restarting anything.
-
-1. Check **[modelcontextprotocol.io/clients](https://modelcontextprotocol.io/clients)** and filter for **"discovery"**.
-2. If your client supports discovery (like Claude Desktop or Claude Code), try enabling the **Experimental features** → **Add Actor** on the [mcp.apify.com](https://mcp.apify.com) page.
-3. Update your config and try this prompt:
-
-> "I need to check the prices of some products on Amazon. Find an Amazon scraper Actor, add it as a tool, and get the price for 'PlayStation 5'."
-
-If supported, you'll see the agent call `apify.store.search`, then `apify.actor.get`, and finally "register" a new tool specifically for Amazon before running it.
-
-## 7. Checkpoint
+## 6. Checkpoint
 
 - [ ] MCP server configured with Actor discovery and runs enabled
 - [ ] Agent sees Apify tools when asked
@@ -82,3 +70,17 @@ If supported, you'll see the agent call `apify.store.search`, then `apify.actor.
 - [ ] Google Maps scraper found and ran through a natural language request
 
 When ready, open [lesson-3-apify-cli.md](./lesson-3-apify-cli.md).
+
+---
+
+## Bonus: On-the-fly Tool Creation (Optional)
+
+Some MCP clients support **dynamic tool discovery** — the agent can find a tool it doesn't have yet, "install" it, and use it immediately without restarting.
+
+1. Check **[modelcontextprotocol.io/clients](https://modelcontextprotocol.io/clients)** and filter for **"discovery"**
+2. If your client supports discovery (Claude Code and Claude Desktop do), enable **Experimental features → Add Actor** on [mcp.apify.com](https://mcp.apify.com)
+3. Update your config and try this prompt:
+
+> "I need to check the prices of some products on Amazon. Find an Amazon scraper Actor, add it as a tool, and get the price for 'PlayStation 5'."
+
+If supported, you'll see the agent call `apify.store.search`, then `apify.actor.get`, and finally register a new tool before running it.

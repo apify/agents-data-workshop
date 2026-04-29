@@ -8,7 +8,7 @@
 
 ## 1. What are Agent Skills?
 
-Agent Skills are structured instructions that teach your AI coding agent domain-specific knowledge about a platform or workflow. They tell the agent which tools to use, which patterns to follow, and which best practices to apply.
+Agent Skills are structured instruction files that teach your AI coding agent domain-specific knowledge about a platform or workflow. They tell the agent which tools to use, which patterns to follow, and which best practices to apply — without you having to explain it every time.
 
 When you install an Apify Agent Skill, your coding agent learns how to use the Apify CLI, which Actors to call for different scraping tasks, and how to build and deploy new Actors from scratch.
 
@@ -21,6 +21,8 @@ Apify ships two skills:
 
 ## 2. Install both skills
 
+Agent Skills are installed via `npx skills`, an npm-based tool for fetching and registering skill files with your coding agent. When you run these commands, the skill content is downloaded and saved where your agent can read it.
+
 Run these commands in your terminal:
 
 ```bash
@@ -31,7 +33,7 @@ npx skills add apify/agent-skills/apify-ultimate-scraper
 npx skills add apify/agent-skills/apify-actor-development
 ```
 
-Confirm both are installed — ask your agent:
+Once installed, confirm your agent can see them:
 
 > What Apify Agent Skills are available to me?
 
@@ -59,17 +61,17 @@ You now have two ways to connect your agent to Apify. Here is the distinction:
 - **MCP:** Best for "chat and research." Use it when you want the agent to quickly grab some data from the web and bring it into your current conversation.
 - **Agent Skills:** Best for "coding and building." Use these when you want the agent to use the Apify CLI, automate complex data pipelines, or build and deploy new Actors (which you'll do in the next lesson).
 
-## 5. Practical Exercise: Research and Compare
+## 5. Practical Exercise: Research a Topic
 
-Let's test the **Ultimate Scraper** skill. Ask your agent to research something complex that requires multiple sources:
+Let's test the **Ultimate Scraper** skill with a focused task. Ask your agent:
 
-> "I want to research the topic of 'The future of AI agents'. Find 3 relevant videos on YouTube and 2 recent articles found via Google Search. Summarize the different perspectives."
+> "Search Google for 3 recent articles about 'building AI agents in 2025'. Give me the title, source, and a one-sentence summary for each."
 
-The agent should use its new knowledge to decide which tools are best, structure the inputs correctly, and call them via the CLI or MCP (the skills help it decide which is most efficient).
+The skill tells your agent which tool to call and how to structure the Google Search input. You should get three results with clean summaries within a minute.
 
 ## 6. Checkpoint
 
 - [ ] Both skills installed and confirmed by the agent
-- [ ] Successfully performed a multi-source research task using the new skills
+- [ ] Google Search returned articles with summaries
 
 When ready, open [lesson-5-build-your-own.md](./lesson-5-build-your-own.md).
