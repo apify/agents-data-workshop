@@ -1,4 +1,4 @@
-# Feed Your Agents with Data
+# Teach Your Agents To Scrape Real-Time Data
 
 A 90-minute hands-on workshop. Connect your AI coding agent to live web data using the Model Context Protocol (MCP) and Apify Agent Skills.
 
