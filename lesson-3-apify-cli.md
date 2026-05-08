@@ -50,7 +50,7 @@ You can inspect an Actor's input schema directly from the CLI. Try it with the G
 apify actors info compass/crawler-google-places
 ```
 
-The `apify info` command shows you metadata about the Actor, including its required and optional input fields. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
+The `apify actors info` command shows you metadata about the Actor, including its required and optional input fields. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
 
 Try running a different Actor now using what you found in the info:
 
