@@ -23,15 +23,13 @@ Apify ships two skills:
 
 Agent Skills are installed via `npx skills`, an npm-based tool for fetching and registering skill files with your coding agent. When you run these commands, the skill content is downloaded and saved where your agent can read it.
 
-Run these commands in your terminal:
+Run this commands in your terminal:
 
 ```bash
-npx skills add apify/agent-skills/apify-ultimate-scraper
+npx skills add apify/agent-skills
 ```
 
-```bash
-npx skills add apify/agent-skills/apify-actor-development
-```
+And select both the ultimate scraper and the actor development skills
 
 Once installed, confirm your agent can see them:
 
