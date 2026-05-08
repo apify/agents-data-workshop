@@ -47,7 +47,7 @@ You can run any Actor on the Apify Store this way. But how do you know what the 
 You can inspect an Actor's input schema directly from the CLI. Try it with the Google Maps Scraper:
 
 ```bash
-apify info apify/google-maps-scraper
+apify actors info compass/crawler-google-places
 ```
 
 The `apify info` command shows you metadata about the Actor, including its required and optional input fields. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
