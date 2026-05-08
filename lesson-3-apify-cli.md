@@ -44,13 +44,13 @@ This runs the Actor and streams the results to your terminal. The same Actor, th
 
 You can run any Actor on the Apify Store this way. But how do you know what the `--input` JSON should look like?
 
-You can inspect an Actor's input schema directly from the CLI. Try it with the Google Maps Scraper:
+You can inspect an Actor's input schema directly from the CLI. The command needs an Actor ID (the `owner/actor-name` format you see in the Store URL, not just a display name). Try it with the Instagram Scraper:
 
 ```bash
-apify actors info compass/crawler-google-places
+apify actors info apify/instagram-scraper --input
 ```
 
-The `apify actors info` command shows you metadata about the Actor, including its required and optional input fields. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
+The `apify actors info` command shows you metadata about the Actor, including its required and optional input fields. Find other Actor IDs by searching the [Apify Store](https://apify.com/store) — each Actor's page URL contains its ID. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
 
 Try running a different Actor now using what you found in the info:
 
