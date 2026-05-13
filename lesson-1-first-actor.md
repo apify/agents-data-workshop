@@ -8,16 +8,18 @@
 
 ## 1. Create an Apify account
 
-Go to [console.apify.com/sign-up](https://console.apify.com/sign-up?couponId=DEVWORLD2026&utm_source=devworld-conf&utm_medium=referral&utm_campaign=events-2026-devworld&utm_content=workshop) and create a free account. Sign in.
+Go to [console.apify.com/sign-up](https://console.apify.com/sign-up) and create a free account. Sign in.
 
-## 2. Apply the promo code
+> **Workshop attendees:** If you're at a live workshop, the instructor may provide a promo code for free credits. Otherwise, Apify offers a free tier to get started.
 
-The instructor will give you a promo code in the room. This gives you free platform credits for today's workshop.
+## 2. Apply the promo code (if available)
+
+If you have a promo code from a workshop or event:
 
 1. In Apify Console, click your avatar (top-right) → **Settings** → **Usage & Billing**
 2. Enter the promo code and click **Apply**
 
-You now have credits to run Actors.
+Otherwise, you'll have access to Apify's free tier credits.
 
 ## 3. Run the YouTube Scraper
 
@@ -45,7 +47,7 @@ That's it. You just scraped live data from YouTube without writing a line of cod
 
 ## 5. Checkpoint
 
-- [ ] Apify account created and promo code applied
+- [ ] Apify account created
 - [ ] YouTube Scraper ran and returned live data
 
 When ready, open [lesson-2-mcp.md](./lesson-2-mcp.md).
