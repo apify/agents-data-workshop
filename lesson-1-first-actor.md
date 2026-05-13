@@ -1,4 +1,4 @@
-# Lesson 1: Run Your First Actor
+# Lesson 1: Run your first actor
 
 **Goal:** Create an Apify account, apply your promo code, and run an existing Actor to see what the platform can do. No terminal required.
 
@@ -21,7 +21,7 @@ If you have a promo code from a workshop or event:
 
 Otherwise, you'll have access to Apify's free tier credits.
 
-## 3. Run the YouTube Scraper
+## 3. Run the YouTube scraper
 
 **What is an Actor?**
 An "Actor" is a serverless cloud program. It's the building block of the Apify platform. Each Actor is a mini-app designed for a specific task—like scraping a website, automating a browser, or processing data. They run in the cloud, so you don't have to worry about servers, proxies, or staying online.

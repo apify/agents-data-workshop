@@ -1,4 +1,4 @@
-# Lesson 5: Build and Publish Your Own Actor
+# Lesson 5: Build and publish your own actor
 
 **Goal:** Use the Actor Development skill to build a Hacker News hiring scraper and deploy it to the Apify platform — from a single prompt.
 

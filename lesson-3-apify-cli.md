@@ -1,4 +1,4 @@
-# Lesson 3: Install and Use the Apify CLI
+# Lesson 3: Install and use the Apify CLI
 
 **Goal:** Install the Apify CLI, log in, and run an Actor directly from your terminal.
 
@@ -30,7 +30,7 @@ apify login
 
 This opens a browser tab to authenticate. Complete the login and return to your terminal.
 
-## 3. Run an Actor from the CLI
+## 3. Run an actor from the CLI
 
 The Instagram Scraper you ran in Lesson 1 can also be called from the terminal. Try it:
 
@@ -40,7 +40,7 @@ apify call apify/instagram-scraper --input '{"usernames": ["natgeo"], "resultsLi
 
 This runs the Actor and streams the results to your terminal. The same Actor, the same data — but now you're controlling it programmatically.
 
-## 4. Run other Actors and inspect inputs
+## 4. Run other actors and inspect inputs
 
 You can run any Actor on the Apify Store this way. But how do you know what the `--input` JSON should look like?
 

@@ -1,4 +1,4 @@
-# Lesson 2: Connect Your Agent with MCP
+# Lesson 2: Connect your agent with MCP
 
 **Goal:** Understand what MCP is and configure your AI coding tool to use Apify's MCP server.
 
@@ -45,7 +45,7 @@ Ask your agent:
 
 Your agent should call the Apify Google Search tool through MCP and return live results.
 
-## 5. Add any Actor to your agent
+## 5. Add any actor to your agent
 
 With **Actor discovery** and **Actor runs** enabled, your agent can now use any of the 2,000+ Actors in the Apify Store on demand.
 
@@ -73,7 +73,7 @@ When ready, open [lesson-3-apify-cli.md](./lesson-3-apify-cli.md).
 
 ---
 
-## Bonus: On-the-fly Tool Creation (Optional)
+## Bonus: On-the-fly tool creation (optional)
 
 Some MCP clients support **dynamic tool discovery** — the agent can find a tool it doesn't have yet, "install" it, and use it immediately without restarting.
 
