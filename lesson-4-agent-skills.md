@@ -1,4 +1,4 @@
-# Lesson 4: Install Agent Skills
+# Lesson 4: Install agent skills
 
 **Goal:** Understand what Agent Skills are and install the two Apify skills into your coding tool.
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 1. What are Agent Skills?
+## 1. What are agent skills?
 
 Agent Skills are structured instruction files that teach your AI coding agent domain-specific knowledge about a platform or workflow. They tell the agent which tools to use, which patterns to follow, and which best practices to apply — without you having to explain it every time.
 
@@ -52,14 +52,14 @@ When you ask your agent to build an Actor, the Actor Development skill tells it:
 
 Your agent already knows how to write code. These skills give it the Apify-specific knowledge to turn code into deployed, running Actors.
 
-## 4. MCP vs. Agent Skills: Which one to use?
+## 4. MCP vs. agent skills: Which one to use?
 
 You now have two ways to connect your agent to Apify. Here is the distinction:
 
 - **MCP:** Best for "chat and research." Use it when you want the agent to quickly grab some data from the web and bring it into your current conversation.
 - **Agent Skills:** Best for "coding and building." Use these when you want the agent to use the Apify CLI, automate complex data pipelines, or build and deploy new Actors (which you'll do in the next lesson).
 
-## 5. Practical Exercise: Research a Topic
+## 5. Practical exercise: Research a topic
 
 Let's test the **Ultimate Scraper** skill with a focused task. Ask your agent:
 

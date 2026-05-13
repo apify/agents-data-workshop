@@ -4,11 +4,11 @@ A 90-minute hands-on workshop. Connect your AI coding agent to live web data usi
 
 **Author:** Kevin Lewis ([@phazonoverload](https://github.com/phazonoverload)), Apify
 
-## Why This Workshop Exists
+## Why this workshop exists
 
 AI coding agents can write code, but they can't access the live web. This workshop teaches you how to bridge that gap using MCP (Model Context Protocol) and Apify's platform. By the end, your agent will be able to scrape websites, pull real-time data, and build custom scrapers on command.
 
-## What You'll Learn
+## What you'll learn
 
 After completing this workshop, you will be able to:
 
@@ -17,7 +17,7 @@ After completing this workshop, you will be able to:
 - Install Agent Skills that teach your coding tool Apify-specific workflows
 - Build and deploy your own custom web scraper using natural language prompts
 
-## Target Audience
+## Target audience
 
 This workshop is designed for **developers** who:
 
@@ -27,7 +27,7 @@ This workshop is designed for **developers** who:
 
 No prior experience with web scraping, MCP, or Apify is required.
 
-## What You'll Build Today
+## What you'll build today
 
 - Run your first web scraping Actor and get live data in seconds
 - Connect your AI agent to Apify's MCP server so it can pull data from the web on demand
@@ -45,7 +45,7 @@ No prior experience with MCP or Apify needed.
 
 > **Note for self-hosted workshops:** If you're running this workshop at your own event, you may want to provide promo codes for free Apify credits to attendees. Contact Apify for event-specific codes. Instructors should be available to help participants who get stuck.
 
-## Session Structure
+## Session structure
 
 1. **Opening talk** (~15 min) — introduces Apify, MCP, and Agent Skills
 2. **Self-paced lessons** (~70 min) — work through the lesson files at your own speed
@@ -69,7 +69,7 @@ If you're running this workshop at an event, raise your hand or flag down an ins
 
 If you're working through this on your own, open an issue on this repo and we'll help.
 
-## After the Workshop
+## After the workshop
 
 The [Apify Store](https://apify.com/store) has thousands of ready-made Actors you can call through MCP or the CLI. A few highlights:
 
@@ -81,7 +81,7 @@ The [Apify Store](https://apify.com/store) has thousands of ready-made Actors yo
 | LinkedIn    | Company and job data                     |
 | Amazon      | Product details, reviews, prices         |
 
-## Further Reading
+## Further reading
 
 - [Model Context Protocol Documentation](https://modelcontextprotocol.io)
 - [Apify MCP Server](https://mcp.apify.com)
