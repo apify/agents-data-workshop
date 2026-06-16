@@ -1,4 +1,4 @@
-# Lesson 3: Install and use the Apify CLI
+# Lesson 4: Install and use the Apify CLI
 
 **Goal:** Install the Apify CLI, log in, and run an Actor directly from your terminal.
 
@@ -32,13 +32,13 @@ This opens a browser tab to authenticate. Complete the login and return to your 
 
 ## 3. Run an actor from the CLI
 
-The Instagram Scraper you ran in Lesson 1 can also be called from the terminal. Try it:
+You ran the YouTube Scraper in Lesson 1. Now try a different one -- the Instagram Scraper -- from the terminal:
 
 ```bash
 apify call apify/instagram-scraper --input '{"usernames": ["natgeo"], "resultsLimit": 5}'
 ```
 
-This runs the Actor and streams the results to your terminal. The same Actor, the same data — but now you're controlling it programmatically.
+This runs the Actor and streams the results to your terminal. The same Actor, the same data, but now you're controlling it programmatically.
 
 ## 4. Run other actors and inspect inputs
 
@@ -50,7 +50,7 @@ You can inspect an Actor's input schema directly from the CLI. The command needs
 apify actors info apify/instagram-scraper --input
 ```
 
-The `apify actors info` command shows you metadata about the Actor, including its required and optional input fields. Find other Actor IDs by searching the [Apify Store](https://apify.com/store) — each Actor's page URL contains its ID. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
+The `apify actors info` command shows you metadata about the Actor, including its required and optional input fields. Find other Actor IDs by searching the [Apify Store](https://apify.com/store) -- each Actor's page URL contains its ID. This is invaluable when you're scripting or teaching an agent how to use a specific tool.
 
 Try running a different Actor now using what you found in the info:
 
@@ -75,4 +75,4 @@ Later, Agent Skills will teach your AI coding agent how to use these CLI command
 - [ ] Apify CLI installed and authenticated
 - [ ] Instagram Scraper ran successfully via CLI
 
-When ready, open [lesson-4-agent-skills.md](./lesson-4-agent-skills.md).
+When ready, open [lesson-5-agent-skills.md](./lesson-5-agent-skills.md).
