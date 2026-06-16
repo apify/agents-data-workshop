@@ -30,7 +30,7 @@ Let's pull real data right now — no code, no terminal.
 
 1. Go to [console.apify.com/store](https://console.apify.com/store) and search for **YouTube Scraper**
 2. Click **Try for free**
-3. In the input form, enter a search query you're curious about (e.g. `AI agents 2025`)
+3. In the input form, enter a search query you're curious about (e.g. `AI agents 2026`)
 4. Set **Max results** to `10` to keep it fast
 5. Click **Start**
 
@@ -50,4 +50,4 @@ That's it. You just scraped live data from YouTube without writing a line of cod
 - [ ] Apify account created
 - [ ] YouTube Scraper ran and returned live data
 
-When ready, open [lesson-2-mcp.md](./lesson-2-mcp.md).
+When ready, open [lesson-2-what-to-do-with-your-data.md](./lesson-2-what-to-do-with-your-data.md).

@@ -1,71 +1,65 @@
 # Teach your agents to scrape real-time data
 
-A 90-minute hands-on workshop. Connect your AI coding agent to live web data using the Model Context Protocol (MCP) and Apify Agent Skills.
+A hands-on workshop. Connect your AI agent to live web data using the Model Context Protocol (MCP) and Apify Agent Skills, then build your own scraper when nothing off-the-shelf fits.
 
 **Author:** Kevin Lewis ([@phazonoverload](https://github.com/phazonoverload)), Apify
 
 ## Why this workshop exists
 
-AI coding agents can write code, but they can't access the live web. This workshop teaches you how to bridge that gap using MCP (Model Context Protocol) and Apify's platform. By the end, your agent will be able to scrape websites, pull real-time data, and build custom scrapers on command.
+AI agents can write code and reason, but they can't access the live web on their own. This workshop teaches you how to bridge that gap using MCP and Apify's platform. By the end, your agent will be able to scrape websites, pull real-time data, and build custom scrapers on command.
 
-## What you'll learn
+## Who this is for
 
-After completing this workshop, you will be able to:
+This workshop works for non-coders and developers alike.
 
-- Run pre-built web scrapers (Actors) from the Apify Store
-- Configure MCP to give your AI agent access to live web data
-- Install Agent Skills that teach your coding tool Apify-specific workflows
-- Build and deploy your own custom web scraper using natural language prompts
-
-## Target audience
-
-This workshop is designed for **developers** who:
-
-- Already use AI coding tools (Claude Code, Cursor, Codex, etc.)
-- Want to give their agents access to live web data
-- Have basic command-line familiarity
+- **Non-coders** can run Actors, export data, chain them together, and connect them to an AI assistant -- no terminal needed.
+- **Developers** can do all of that plus install CLI tools and Agent Skills to build and publish custom Actors.
 
 No prior experience with web scraping, MCP, or Apify is required.
 
-## What you'll build today
-
-- Run your first web scraping Actor and get live data in seconds
-- Connect your AI agent to Apify's MCP server so it can pull data from the web on demand
-- Install Agent Skills that teach your coding agent how to use Apify tools
-- Build and deploy your own web scraping Actor — from a single prompt
-
 ## Prerequisites
 
-**Bring your laptop with:**
+**Everyone:**
+
+- An Apify account (free, you'll create it in Lesson 1)
+
+**For lessons 4-6 (developer track):**
 
 - An AI coding tool installed: Claude Code, Cursor, Codex, or similar
-- Node.js (v18+) — download at [nodejs.org](https://nodejs.org)
+- Node.js (v18+), download at [nodejs.org](https://nodejs.org)
 
-No prior experience with MCP or Apify needed.
-
-> **Note for self-hosted workshops:** If you're running this workshop at your own event, you may want to provide promo codes for free Apify credits to attendees. Contact Apify for event-specific codes. Instructors should be available to help participants who get stuck.
+> **Note for self-hosted workshops:** If you're running this at your own event, you may want to provide promo codes for free Apify credits. Contact Apify for event-specific codes, and have instructors available to help people who get stuck.
 
 ## Session structure
 
-1. **Opening talk** (~15 min) — introduces Apify, MCP, and Agent Skills
-2. **Self-paced lessons** (~70 min) — work through the lesson files at your own speed
-3. **Wrap-up** (~5 min) — recap and next steps
+This works as a self-paced station or as an instructor-led session.
 
-If you're running this workshop yourself, have helpers available to assist participants who get stuck.
+1. **Opening talk** (~15 min) -- introduces Apify, MCP, and Agent Skills
+2. **Self-paced lessons** (~70 min) -- work through the lessons at your own speed
+3. **Wrap-up** (~5 min) -- recap and next steps
+
+Everyone starts at lesson 1. If you don't write code, lessons 1-3 are for you. If you build software, continue through lesson 6.
 
 ## Lessons
 
-| #   | Lesson                                                           | Approx. time |
-| --- | ---------------------------------------------------------------- | ------------ |
-| 1   | [Run Your First Actor](./lesson-1-first-actor.md)                | 10 min       |
-| 2   | [Connect Your Agent with MCP](./lesson-2-mcp.md)                 | 15 min       |
-| 3   | [Install and Use the Apify CLI](./lesson-3-apify-cli.md)         | 10 min       |
-| 4   | [Install Agent Skills](./lesson-4-agent-skills.md)               | 10 min       |
-| 5   | [Build and Publish Your Own Actor](./lesson-5-build-your-own.md) | 20 min       |
+| # | Lesson | Time | 
+| --- | --- | --- |
+| 1 | [Run Your First Actor](./lesson-1-first-actor.md) | 10 min |
+| 2 | [What to Do With Your Data](./lesson-2-what-to-do-with-your-data.md) | 15 min |
+| 3 | [Connect Your Agent with MCP](./lesson-3-mcp.md) | 15 min |
+| 4 | [Install and Use the Apify CLI](./lesson-4-apify-cli.md) | 10 min |
+| 5 | [Install Agent Skills](./lesson-5-agent-skills.md) | 10 min |
+| 6 | [Build and Publish Your Own Actor](./lesson-6-build-your-own.md) | 20 min |
+
+### Not sure what to do?
+
+- **Everyone:** start at lesson 1 and go in order.
+- **Non-coder:** you can stop after lesson 3. Browse [recipes.md](./recipes.md) for ready-to-use prompts that work with your connected assistant.
+- **Developer:** complete all six lessons. The [recipes](./recipes.md) are useful at any point for inspiration.
 
 ## Stuck?
 
-If you're running this workshop at an event, raise your hand or flag down an instructor.
+If you're at an event, raise your hand or flag down an instructor.
 
 If you're working through this on your own, open an issue on this repo and we'll help.
 
@@ -73,13 +67,13 @@ If you're working through this on your own, open an issue on this repo and we'll
 
 The [Apify Store](https://apify.com/store) has thousands of ready-made Actors you can call through MCP or the CLI. A few highlights:
 
-| Platform    | What you can get                         |
-| ----------- | ---------------------------------------- |
+| Platform | What you can get |
+| --- | --- |
 | Google Maps | Business listings, reviews, contact info |
-| Booking.com | Hotel prices, availability, ratings      |
-| YouTube     | Video metadata, comments, channel info   |
-| LinkedIn    | Company and job data                     |
-| Amazon      | Product details, reviews, prices         |
+| Booking.com | Hotel prices, availability, ratings |
+| YouTube | Video metadata, comments, channel info |
+| LinkedIn | Company and job data |
+| Amazon | Product details, reviews, prices |
 
 ## Further reading
 
@@ -90,4 +84,4 @@ The [Apify Store](https://apify.com/store) has thousands of ready-made Actors yo
 
 ## License
 
-MIT — see [LICENSE](./LICENSE) for details.
+MIT, see [LICENSE](./LICENSE) for details.
