@@ -33,22 +33,13 @@ Note: a live API token will be included in the URL. You can create and select on
 
 ## 4. Chain Actors together
 
-The real power of the platform is chaining: one Actor finishes and automatically triggers another.
+The real power of the platform is chaining: one Actor finishes and automatically triggers another. Apify supports this through its **Integrations** tab, which offers a few different kinds of connections.
 
-Apify has a built-in **Actor-to-Actor integration** that handles this. Instead of writing a webhook by hand, you use a UI that connects the output of one Actor to the input of another.
+Click the **Integrations** tab on any Actor's page and you'll find ready-made connections to services like Google Drive, Slack, and Gmail -- you can export datasets, send notifications, or trigger external workflows when a run finishes.
 
-**Example:** scrape YouTube video URLs with the YouTube Scraper, then send each URL to the Website Content Crawler to get the full page text.
+For chaining one Actor directly into another, the target Actor needs to accept a `datasetId` or `runId` as input (this is called being "integration-ready"). Many Actors in the Store support this, and they appear in the integration catalog when you click **Add integration**. If an Actor doesn't appear, it doesn't support automatic chaining.
 
-1. Go to [console.apify.com](https://console.apify.com) -> **Actors** -> find the `streamers/youtube-scraper` Actor.
-2. Click the **Integrations** tab.
-3. Search for **Website Content Crawler** in the catalog and select it
-4. Set **Start when** to **Run succeeded**
-5. The input fields will appear. Integration-ready Actors (like the Website Content Crawler) handle data passing automatically -- they know to fetch the dataset from the triggering run. Just review and save.
-6. Click **Add integration**
-
-Now every time the YouTube Scraper finishes, the Website Content Crawler automatically runs against the video URLs it found. You get enriched data without writing any code between the two steps.
-
-> **Tip:** You can chain any two Actors this way. The Integrations tab lists compatible targets for each Actor. This is how you build multi-step pipelines.
+The key insight is: data flows through datasets, and any Actor can read any dataset. Later in the workshop you'll use the CLI and MCP to chain Actors from your terminal or through your AI agent.
 
 ## 5. What just happened
 
@@ -58,7 +49,7 @@ You now know three ways to use data from an Actor: download it as a file, fetch 
 
 - [ ] Exported data as JSON or CSV from the console
 - [ ] Accessed the dataset via its API URL
-- [ ] Understand how webhook chaining works
+- [ ] Understand how Actor chaining works (datasets as the bridge between Actors)
 - [ ] Know when to use export vs API vs chaining
 
 When ready, open [lesson-3-mcp.md](./lesson-3-mcp.md).
